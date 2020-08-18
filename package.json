@@ -1,0 +1,28 @@
+{
+  "name": "gemini-to-html",
+  "version": "1.0.0",
+  "description": "Parse out gemini pages and convert them to HTML",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RangerMauve/gemini-to-html.git"
+  },
+  "keywords": [
+    "gemini",
+    "parse",
+    "html",
+    "text"
+  ],
+  "author": "rangermauve <ranger@mauve.moe> (https://mauve.moe/)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RangerMauve/gemini-to-html/issues"
+  },
+  "homepage": "https://github.com/RangerMauve/gemini-to-html#readme",
+  "dependencies": {
+    "escape-goat": "^3.0.0"
+  }
+}
