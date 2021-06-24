@@ -1,7 +1,7 @@
-const HEADER = /^(#+)\s+(.*)/
+const HEADER = /^(#{1,3})\s*(.*)/
 const PRE = /^```(.*)?/
-const LIST = /^\*\s+(.*)/
-const QUOTE = /^>\s+(.*)/
+const LIST = /^\*\s*(.*)/
+const QUOTE = /^>\s*(.*)/
 const LINK = /^=>\s+(\S+)\s*(.*)/
 
 module.exports = parse
