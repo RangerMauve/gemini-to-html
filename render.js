@@ -1,6 +1,13 @@
 const { htmlEscape } = require('escape-goat')
+const slug = require('slug')
 
 module.exports = render
+
+function id(content) {
+  return slug(content, {
+    replacement: '_'
+  })
+}
 
 function render (tokens) {
   return tokens.map((line) => {
@@ -8,7 +15,7 @@ function render (tokens) {
 
     switch (type) {
       case 'quote': return htmlEscape`<blockquote>${line.content}</blockquote>`
-      case 'header': return htmlEscape`<h${line.level}>${line.content}</h${line.level}>`
+      case 'header': return htmlEscape`<h${line.level} id="${id(line.content)}">${line.content}</h${line.level}>`
       case 'link': return htmlEscape`<div><a href="${line.href}">${line.content}</a></div>`
       case 'pre': return line.alt
         ? htmlEscape`<pre><code class="language-${line.alt}">\n${line.items.join('\n')}\n</code></pre>`

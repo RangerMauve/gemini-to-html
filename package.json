@@ -4,7 +4,7 @@
   "description": "Parse out gemini pages and convert them to HTML",
   "main": "parse.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/RangerMauve/gemini-to-html#readme",
   "dependencies": {
-    "escape-goat": "^3.0.0"
+    "escape-goat": "^3.0.0",
+    "slug": "^5.2.0"
   }
 }

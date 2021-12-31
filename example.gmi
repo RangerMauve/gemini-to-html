@@ -2,6 +2,8 @@
 
 ## Subtitle
 
+### 😁 "Emoji" subtitle?!
+
 Some example text
 
 * Some
